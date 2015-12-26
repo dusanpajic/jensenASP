@@ -1,0 +1,35 @@
+﻿@{
+    ViewBag.Title = "About company";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<br />
+<p><h4><b>Description of this example:</b></h4></p>
+<p>
+    Per Jensen sells soda such as Fanta and Coca Cola to small restaurants. 
+At the moment he has an employee who checks the amount of soda on stock every morning, by counting it all in the storage.</p>
+
+   <p>
+    To make this more effective, he would like to have a storage-system to keep track of the amount of sodas.
+    He would also like it to be possible for clients to go to his website, check what's in stock and create orders.
+   </p>
+
+    <p>
+    This example is a simple storage system. It has following functions:<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;•	A public page with a list of sodas, title, description and price + amount on stock.<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;•	A public page where a visitor can place an order for sodas<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;•	A private area for Per Jensen (The soda salesman) where he can do the following:
+    </p>
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Create new sodas<br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Edit sodas<br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Delete sodas. (Deleting soda checks if there exists an order with that specific soda. If there is such order, it returns an error. Otherwise it deletes selected soda)<br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Change amount on stock of each soda-type<br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Accept or decline an order. (Accepting an order checks if the amount of the specific soda is available, and subtract it from the stock if there is enough. <br />
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Otherwise it gives an error and leave the order as open.)
+    <br />
+    <br />
+    <br />
+    <br />
+<p>
+    *This small CRUD demonstration was done using VisualStudio 2013, C#, EntityFramework, ASP.NET, MVC, MySQL, Bootstrap. 
+</p>

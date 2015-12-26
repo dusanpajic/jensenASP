@@ -1,0 +1,47 @@
+﻿@model WebApplicationASP1.order
+
+@{
+    ViewBag.Title = "Accept order";
+}
+
+
+<h3>Accept this order?</h3>
+<div>
+    @*<h4>order</h4>*@
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.drink.DrinkName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.drink.DrinkName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Accept order" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

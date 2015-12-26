@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="jensenDemo" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\dule11\\Desktop\\verzije\\gitf\ 7\ -\ Copy\\WebApplicationASP1\\WebApplicationASP1\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\dule11\\Desktop\\verzije\\gitf\ 7\ -\ Copy\\WebApplicationASP1\\WebApplicationASP1\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="jensenDemo/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\dule11\\Desktop\\verzije\\gitf\ 7\ -\ Copy\\WebApplicationASP1\\WebApplicationASP1\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="Db2Entities-Web.config Connection String" description="" value="metadata=res://*/Model1.csdl|res://*/Model1.ssdl|res://*/Model1.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=baza3.database.windows.net;Initial Catalog=baza3;User ID=html24;Password=Yoda_123&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\dule11\\Desktop\\verzije\\gitf\ 7\ -\ Copy\\WebApplicationASP1\\WebApplicationASP1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Db2Entities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=baza3.database.windows.net;Initial Catalog=baza3;User ID=html24;Password=Yoda_123" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\dule11\\Desktop\\verzije\\gitf\ 7\ -\ Copy\\WebApplicationASP1\\WebApplicationASP1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
